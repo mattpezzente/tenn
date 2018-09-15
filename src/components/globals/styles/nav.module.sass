@@ -1,0 +1,128 @@
+@import '../../../styles/vars'
+
+.fixed
+  position: fixed!important
+  z-index: 10
+  width: 100%
+  background: rgba(255,255,255,0.95)
+  top: -120px
+  transform: translateY(120px)
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.6)
+
+  .linksSub
+    display: none
+
+  .logo
+    width: 110px
+    @media screen and(max-width: 850px)
+      width: 175px
+
+.fixed + section
+  margin-top: 116px
+  @media screen and(max-width: 992px)
+    margin-top: 104px
+  @media screen and(max-width: 850px)
+    margin-top: 81px
+
+.container
+  position: relative
+  display: flex
+  justify-content: space-between
+  transition: 0.8s
+
+.wrapper
+  text-align: right
+  font-family: $fontCoustard
+
+.logo
+  margin-bottom: 10px
+  margin-top: 10px
+  margin-left: 30px
+  width: 225px
+  transition: 0.2s
+  @media screen and(max-width: 992px)
+    width: 175px
+    margin-top: 15px
+    margin-bottom: 5px
+  @media screen and(max-width: 850px)
+    margin-top: 5px
+    margin-bottom: 5px
+
+  &:hover
+    opacity: 0.8
+
+.icon
+  max-width: 20px
+
+.linksSub
+  display: inline-block
+  margin-bottom: 15px
+  padding: $navPadding
+  border-bottom-left-radius: 5px
+  background: $green
+  list-style: none
+  box-shadow: $boxShadow
+
+  li
+    margin-left: 0.75rem
+    font-size: 0.750rem
+    display: inline
+
+  a
+    color: $white
+
+    &:hover
+      color: $teal
+    
+
+.linksMain
+  padding: $navPadding
+  margin-top: 15px
+  margin-bottom: 15px
+  list-style: none
+  @media screen and(max-width: 992px)
+    margin-top: 5px
+    margin-bottom: 15px
+
+  li
+    display: inline
+
+  a
+    font-size: 1.125rem
+    margin-left: 1.75rem
+    color: $green
+    @media screen and(max-width: 992px)
+      font-size: 1rem
+    @media screen and(max-width: 900px)
+      font-size: 0.875rem
+
+    &:active
+      color: $teal
+
+    &:hover
+      color: $teal
+
+.mobileWrapper
+  height: 100vh!important
+  text-align: left
+  background: $green
+
+  a
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6)
+    color: $white
+
+    &:hover
+      color: $teal
+
+.mobileLinksMain
+  margin-top: 100px
+  list-style: none
+
+.mobileLinksSub
+  list-style: none
+  display: inline-block
+  color: $white
+
+  a
+    font-size: 0.75rem
+  

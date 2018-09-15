@@ -1,0 +1,129 @@
+@import '../../styles/vars.sass'
+
+.intro
+  display: block
+  padding: $sectionPadding
+  @media screen and(max-width: 767px)
+    padding: $sectionPaddingSM
+
+  h1
+    @media screen and(max-width: 767px)
+      text-align: center
+      font-size: 2.25rem
+
+  p
+    display: block
+    text-align: justify
+    margin-bottom: 30px
+    @media screen and(max-width: 767px)
+      text-align: left
+
+.introTitle
+  margin: 0
+
+.contact
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-content: center
+  flex-wrap: wrap
+  box-shadow: $boxShadow
+  z-index: 1
+
+.contactCol
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+  padding: $sectionPadding
+  width: calc(50% - 15px)
+  text-align: center
+  @media screen and(max-width: 820px)
+    width: 100%
+  @media screen and(max-width: 500px)
+    padding: 30px
+  @media screen and(max-width: 400px)
+    padding: 15px
+
+  &:nth-child(2)
+    background: $grey
+
+.contactFancy 
+  margin: 50px 0
+  line-height: 0.5
+  text-align: center
+
+.contactFancy span 
+  display: inline-block
+  position: relative  
+
+.contactFancy span:before,
+.contactFancy span:after 
+  content: ""
+  position: absolute
+  height: 6px
+  border-bottom: 3px solid $teal
+  top: 0
+  width: 150px
+  @media screen and(max-width: 400px)
+    width: 75px
+
+.contactFancy span:before 
+  right: 100%
+  margin-right: 15px
+
+.contactFancy span:after 
+  left: 100%
+  margin-left: 15px
+
+.linkContainer
+  display: block
+  margin: 0 auto
+
+.contactLink
+  display: flex
+  align-items: center
+  margin-top: 15px
+  max-width: 300px
+  text-align: left
+  font-size: 0.875rem
+  font-family: $fontLedger
+  color: $black
+  transition: 0.1s
+
+  &:hover
+    color: $teal
+
+.contactIcon
+  max-width: 50px
+  margin: 0 5px
+
+.contactForm
+  width: 75%
+  margin: 0 auto
+  padding: 15px
+  @media screen and(max-width: 1000px)
+    width: 100%
+
+  label, input, textarea
+    display: block
+    width: 100%
+    text-align: left
+
+  textarea
+    min-height: 150px
+
+  button
+    padding: 5px 50px
+    border-radius: 5px
+    background: #56C9D9
+    color: $white
+
+  p
+    &:last-child
+      margin-bottom: 0
+      text-align: right
+
+.contactHiddenField
+  display: none

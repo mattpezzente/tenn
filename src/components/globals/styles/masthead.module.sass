@@ -1,0 +1,55 @@
+@import '../../../styles/vars'
+
+.container
+  position: relative
+  display: flex
+  align-items: flex-end
+  align-content: flex-end
+  flex-wrap: wrap
+  width: 100%
+  height: 500px
+  @media screen and(max-width: 767px)
+    height: 350px
+
+.messageContainer
+  z-index: 2
+  display: flex
+  margin-bottom: 50px
+  @media screen and(max-width: 600px)
+    margin-bottom: 100px
+
+  ul
+    margin-bottom: 0
+    padding: 0 10px
+    
+  li
+    color: $white
+    font-family: $fontAssistant
+    font-size: 2.5rem
+    line-height: 1
+    text-shadow: $textShadow
+    @media screen and(max-width: 600px)
+      font-size: 2rem
+    @media screen and(max-width: 450px)
+      font-size: 1.25rem
+
+  h2
+    margin-bottom: 0
+    padding: 0 10px
+    color: $yellow
+    font-weight: bold
+    font-family: $fontAssistant
+    font-size: 4rem
+    line-height: 1
+    text-shadow: $textShadow
+    @media screen and(max-width: 600px)
+      font-size: 3rem
+    @media screen and(max-width: 450px)
+      font-size: 2.5rem
+
+
+.listContainer
+  text-align: right
+  list-style: none
+  border-right: 2px solid $white
+

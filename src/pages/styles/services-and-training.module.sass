@@ -1,0 +1,105 @@
+@import '../../styles/vars.sass'
+
+.intro
+  display: block
+  padding: $sectionPadding
+  @media screen and(max-width: 767px)
+    padding: $sectionPaddingSM
+
+  h1
+    @media screen and(max-width: 767px)
+      text-align: center
+      font-size: 2.25rem
+
+  p
+    display: block
+    text-align: justify
+    margin-bottom: 30px
+    @media screen and(max-width: 767px)
+      text-align: left
+
+  a
+    color: $green
+    transition: 0.1s
+    &:hover
+      color: $teal
+
+.introTitle
+  width: 100%
+    
+.services
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  padding: $sectionPadding
+  padding-bottom: 100px
+  @media screen and(max-width: 767px)
+    padding: 0
+    padding-bottom: 100px
+
+.servicesTitle
+  z-index: 2
+  padding: 15px
+  margin: 15px auto
+  width: calc(80%)
+  border-radius: 15px
+  background: $green
+  color: $white
+  text-align: center
+  text-transform: uppercase
+  box-shadow: $boxShadow
+  @media screen and(max-width: 900px)
+    width: 100%
+  @media screen and(max-width: 767px)
+    font-size: 1.25rem
+    width: 100%
+    padding: 10px 0
+    border-radius: 0
+
+.servicesList
+  z-index: 2
+  padding: 50px 15px
+  margin: 0 auto
+  width: calc(80%)
+  border-radius: 15px
+  background: $white
+  text-align: center
+  box-shadow: $boxShadow
+  @media screen and(max-width: 900px)
+    width: 100%
+  @media screen and(max-width: 767px)
+    width: 100%
+    border-radius: 0
+  p
+    @media screen and(max-width: 767px)
+      font-size: 1rem
+    @media screen and(max-width: 600px)
+      font-size: 0.875rem
+
+.contact
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  padding: $sectionPadding
+  text-align: center
+
+.contactText
+  font-size: 1.25rem
+  font-family: $fontLedger
+  line-height: 2
+
+.contactLink
+  display: flex
+  align-items: center
+  margin: 15px auto 0 auto
+  font-size: 0.875rem
+  font-family: $fontLedger
+  color: $black
+  transition: 0.1s
+
+  &:hover
+    color: $teal
+
+.contactIcon
+  max-width: 50px
+  margin: 0 5px
